@@ -6,4 +6,9 @@ class Room < ActiveRecord::Base
   acts_as_url :title
 
   validates :title, presence: true, uniqueness: true
+
+def to_param
+	url
+end
+
 end

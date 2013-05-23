@@ -1,0 +1,7 @@
+<h2>create new room</h2>
+
+<%= simple_form_for @room do |f| %>
+	<%= f.input :title, placeholder: "e.g. arti's banter" %>
+
+	<%= f.button :submit, "go" %>
+<% end %>
